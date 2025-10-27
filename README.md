@@ -15,3 +15,10 @@ If you haven’t set up Tailwind dependencies yet, you can install them with:
 3. Laravel uses Composer (PHP’s dependency manager). The vendor/ folder contains all third-party packages installed via Composer and install composer with:
 
 ----- composer install
+
+4. To run the tailwind css:
+
+----- npm run dev
+
+5. I also uploded MySQL database with name neowear.sql in current folder
+note: don't change database file name.
