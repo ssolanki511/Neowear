@@ -2,7 +2,7 @@
 
 Follow these steps to run the project locally.
 
-1. Clone the Repository git clone https://github.com/ssolanki511/NeoWear.git cd Booknest
+1. In your Laravel environment clone the Repository git clone https://github.com/ssolanki511/NeoWear.git cd Booknest
 
 2. Make sure you have Node.js and npm installed. Then install all required dependencies:
 
