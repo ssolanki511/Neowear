@@ -1,0 +1,121 @@
+.payment-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 55px;
+    font-family: 'Neue Montreal',sans-serif;
+}
+.payment-main-container .form-container{
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+}
+.form-container h3{
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+.form-container .product-detail{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+    border-bottom: 1px solid rgba(156, 153, 153, 0.342);
+    padding-bottom: 12px;
+}
+.product-detail .product-logo i{
+    font-size: 23px;
+    padding: 9px;
+    border-radius: 3px;
+    background-color: #b8acac42;
+}
+.product-detail .product-name{
+    font-size: 15px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    letter-spacing: 0.8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;   
+}
+.form-container .input-field{
+    width: 100%;
+    position: relative;
+}
+.input-field input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 7px 6px;
+    border-radius: 3px;
+    margin-top: 11px;
+    letter-spacing: 1.1px;
+    font-family: 'Neue Montreal',sans-serif;
+    resize: none;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+.input-field input:focus{
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(211, 206, 203, 0.2);
+  background-color: #fffdf9;
+}
+.input-field #price{
+    pointer-events: none;
+    color: #777779;
+}
+.input-field p{
+    font-size: 17px;
+    letter-spacing: 0.9px;
+    margin: 14px 0px;
+    font-weight: bold;
+}
+.input-field .radio-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+.radio-box input{
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+}
+.radio-box label{
+    font-size: 15px;
+    letter-spacing: 0.7px;
+}
+.input-submit input{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 17px;
+    font-size: 15px;
+    padding: 9px 0px;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+}
+.input-submit input:hover{
+    scale: 1.04;
+}
+.input-field .error-msg{
+    color: red;
+    font-size: 14px;
+    text-align: start;
+    font-weight: normal;
+    margin-top: 2px;
+}
+@media (max-width: 910px) {
+    .payment-main-container{
+        padding: 30px 35px;
+    }
+    .payment-main-container .form-container{
+        max-width: 100%;
+    }
+}

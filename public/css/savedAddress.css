@@ -1,0 +1,92 @@
+.address-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 55px;
+    font-family: 'Neue Montreal',sans-serif;
+}
+.address-main-container .form-container{
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+}
+.form-container h3{
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+.form-container .input-field{
+    width: 100%;
+}
+.form-container .input-field:nth-last-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.form-container .input-field:nth-last-child(2) div{
+    width: 100%;
+}
+.input-field input,
+.input-field textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 7px 6px;
+    border-radius: 3px;
+    margin-top: 11px;
+    letter-spacing: 1.1px;
+    font-family: 'Neue Montreal',sans-serif;
+    resize: none;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+.input-field input:focus,
+.input-field textarea:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(211, 206, 203, 0.2);
+  background-color: #fffdf9;
+}
+.input-submit input{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 17px;
+    font-size: 15px;
+    padding: 9px 0px;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+}
+.input-submit input:hover{
+    scale: 1.04;
+}
+.address-main-container .image-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-box img{
+    width: 300px;
+    height: 350px;
+}
+.error-msg{
+    color: red;
+    font-size: 14px;
+    margin-top: 1px;
+    text-align: start;
+}
+@media (max-width: 910px) {
+    .address-main-container{
+        padding: 30px 35px;
+    }
+    .address-main-container .form-container{
+        max-width: 100%;
+    }
+    .address-main-container .image-box{
+        display: none;
+    }
+}

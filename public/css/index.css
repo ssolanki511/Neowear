@@ -1,0 +1,281 @@
+.hero-section{
+    width: 100%;
+    height: 70vh;
+    padding: 0px 55px;
+    background-color: transparent;
+    user-select: none;
+    margin-top: 16px;
+}
+.hero-section .swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hero-section .swiper-slide {
+    font-size: 18px;
+    background: transparent;
+}
+.hero-section .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero-section .swiper-button{
+    position: absolute;
+    top: 8%;
+    z-index: 4;
+}
+.hero-section .swiper-button:nth-child(2){
+    right: 10px;
+}
+.hero-section .swiper-button:nth-child(3){
+    right: 110px;
+}
+.hero-section .swiper-button:nth-child(3) .swiper-button-prev{
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #E2E0DF;
+}
+.hero-section .swiper-button:nth-child(2) .swiper-button-next{
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #E2E0DF;
+    border-left: 1px solid #E2E0DF;
+}
+.hero-section .swiper-button-next,
+.hero-section .swiper-button-prev{
+    color: #000;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.hero-section .swiper-button-prev::after,
+.hero-section .swiper-button-next::after{
+    font-size: 11px;
+    font-weight: bolder;
+}
+.feature-section,
+.about-section,
+.feature-banner{
+    font-family: 'Neue Montreal';
+}
+/* feature banner */
+.feature-banner{
+    text-align: center;
+    background-color: #c2c2c2;
+    padding: 72px 0px;
+}
+.feature-banner h2{
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+    font-family: 'Octin Stencil';
+}
+.feature-banner p{
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: #333;
+}
+/* feature section */
+.feature-section{
+    margin: 0px 55px;
+    position: relative;
+    margin-top: 72px;
+    margin-bottom: 32px;
+}
+.feature-section .swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 62px;
+}
+.feature-section .swiper-wrapper{
+    margin-top: 32px;
+    position: relative;
+}
+.feature-section  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-section .product-box{
+    width: 100%;
+}
+.product-box a{
+    text-decoration: none;
+    color: #000;
+}
+.feature-section .product-img{
+    width: inherit;
+    height: 300px;
+    background-color: #E2E0DF;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+.feature-section .product-img p{
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    background-color: rgb(233, 3, 3);
+    color: white;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 5px 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.feature-section .product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+}
+.feature-section .product-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.feature-section .product-main p{
+    font-size: 15.5px;
+    letter-spacing: 0.9px;
+    font-weight: 560;
+}
+.feature-section .product-main .price{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: 4px;
+}
+.feature-section .product-main .price span:nth-child(1){
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: 0.8px;
+}
+.feature-section .product-main .price span:nth-child(2){
+    font-size: 13px;
+    margin-left: 4px;
+    color: #0d0c2293;
+    font-weight: 650;
+    text-decoration: line-through;
+    letter-spacing: 0.8px;
+}
+.feature-section .swiper-button{
+    position: absolute;
+    top: 20px;
+}
+.feature-section .swiper-button:nth-child(3){
+    right: 0px;
+}
+.feature-section .swiper-button:nth-child(4){
+    right: 100px;
+}
+.feature-section .swiper-button:nth-child(4) .swiper-button-prev{
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #E5E7EB;
+}
+.feature-section .swiper-button:nth-child(3) .swiper-button-next{
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #E5E7EB;
+    border-left: 1px solid #E2E0DF;
+}
+.feature-section .swiper-button-next,
+.feature-section .swiper-button-prev{
+    color: #000;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.feature-section .swiper-button-next::after,
+.feature-section .swiper-button-prev::after{
+    font-size: 11px;
+    font-weight: bold;
+}
+.feature-section .swiper-scrollbar-drag{
+    background-color: #0D0C22;
+}
+.feature-section .swiper-scrollbar{
+    background-color: #E5E7EB;
+    height: 6px;
+    width: 400px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feature-section .wishlist-btn{
+    z-index: 99;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    font-size: 20px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.feature-section .wishlist-btn:hover{
+    background-color: rgba(0, 0, 0, 0.329);
+}
+/* about section */
+.about-section{
+    text-align: center;
+    margin: 64px 0px;
+}
+.about-section h3{
+    font-size: 45px;
+    font-family: 'Neue Montreal Bold';
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    word-spacing: 2.5px;
+    margin-bottom: 16px;
+}
+.about-section p{
+    font-size: 17px;
+    padding: 0px 128px;
+    letter-spacing: 0.58px;
+}
+.about-section span{
+    letter-spacing: 0.14px;
+    font-family: 'Neue Montreal Bold';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media (max-width: 720px) {
+    .hero-section{
+        height: auto;
+    }
+    .hero-section .swiper-button-next,
+    .hero-section .swiper-button-prev{
+        width: 20px;
+        height: 20px;
+    }
+    .hero-section .swiper-button{
+        top: 12%;
+    }
+    .hero-section .swiper-button-prev::after,
+    .hero-section .swiper-button-next::after{
+        font-size: 9px;
+    }
+    .hero-section .swiper-button:nth-child(2){
+        right: 0px;
+    }
+    .hero-section .swiper-button:nth-child(3){
+        right: 60px;
+    }
+    .feature-banner{
+        padding: 52px 0px;
+    }
+    .feature-banner h2{
+        font-size: 26px;
+    }
+    .feature-banner p{
+        font-size: 13px;
+    }
+    .feature-section .product-img{
+        height: 120px;
+    }
+}

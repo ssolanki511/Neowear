@@ -1,0 +1,137 @@
+.review-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 55px;
+    font-family: 'Neue Montreal',sans-serif;
+}
+.review-main-container .form-container{
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+}
+.form-container h3{
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+.form-container .product-detail{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    border-bottom: 1px solid rgba(156, 153, 153, 0.342);
+    padding-bottom: 12px;
+}
+.product-detail .product-image{
+    width: 90px;
+    height: 95px;
+}
+.product-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    object-fit: cover;
+}
+.product-detail .product-name{
+    font-size: 15px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    letter-spacing: 0.8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;   
+}
+.form-container .input-field{
+    width: 100%;
+    position: relative;
+}
+.input-field label{
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+}
+.form-container .input-field:nth-last-child(2) label{
+    margin-top: 20px;
+}
+.input-field .rating:not(:checked) > input{
+    position: absolute;
+    appearance: none;
+} 
+.input-field .rating-wrapper{
+    display: flex;
+}
+.input-field .rating:not(:checked) > label{
+    float: right;
+    font-size: 19px;
+} 
+.input-field .rating:not(:checked) > label > svg{
+    fill: #666;
+}
+.input-field .rating > input:checked ~ label > svg{
+    fill: #ffa723;
+}
+.input-field textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 7px 6px;
+    border-radius: 3px;
+    margin-top: 11px;
+    letter-spacing: 1.1px;
+    font-family: 'Neue Montreal',sans-serif;
+    resize: none;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+.input-field textarea:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(211, 206, 203, 0.2);
+  background-color: #fffdf9;
+}
+.input-submit input{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 17px;
+    font-size: 15px;
+    padding: 9px 0px;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+}
+.input-submit input:hover{
+    scale: 1.04;
+}
+.review-main-container .image-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-box img{
+    width: 300px;
+    height: 350px;
+}
+.error-msg{
+    color: red;
+    font-size: 14px;
+    margin-top: 1px;
+    text-align: start;
+}
+@media (max-width: 910px) {
+    .review-main-container{
+        padding: 30px 35px;
+    }
+    .review-main-container .form-container{
+        max-width: 100%;
+    }
+    .review-main-container .image-box{
+        display: none;
+    }
+}

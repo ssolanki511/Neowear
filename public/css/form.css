@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: url('../images/background/forms.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 18px;
+}
+.container .logo-box{
+    display: flex;
+    justify-content: start;
+}
+.container .logo-box .logo-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .logo-box svg{
+    width: 60px;
+    stroke: #fff;
+    fill-opacity: 0;
+    stroke-width: 5px;
+    margin-bottom: 4px;
+}
+.container .logo-box a{
+    text-decoration: none;
+}
+.container .logo-box .logo-name{
+    font-family: 'Michroma', sans-serif;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+.container .box{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 60px;
+    margin-top: 30px;
+}
+.input-field{
+    margin-top: 30px;
+    position: relative;
+}
+.input-field label{
+    font-family: 'Helvetica Mow Text',sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-out;
+    pointer-events: none;
+}
+.input-field input{
+    width: 100%;
+    border: none;
+    padding: 2px 0px;
+    border-bottom: 1px solid black;
+    font-family: 'Helvetica Mow Text',sans-serif;
+    outline: none;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    transition: all 0.1s ease-out;
+}
+.input-field input[type = 'password']{
+    font-size: 11px;
+}
+.input-field label.active {
+  font-size: 9px;
+  top: -14px;
+  color: rgb(13, 163, 78);
+}
+.input-field input.active {
+    border-bottom-color: rgb(13, 163, 78);
+}
+.form-container .input-submit{
+    margin-top: 10px;
+}
+.form-container .input-submit input{
+    font-family: 'Helvetica Mow Text',sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    border-radius: 30px;
+    padding: 13px 55px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(13, 163, 78);
+    border: none;
+    transition: all 0.2s ease-in;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.form-container .input-submit input:hover{
+    background-color: rgb(10, 128, 61);
+    scale: 1.04;
+}
+.error-msg{
+    font-family: "Helvetica Mow Text",sans-serif;
+    color: red;
+    font-size: 14px;
+    margin-top: 1px;
+    text-align: start;
+}
+.error-box{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    font-family: "Neue Montreal", sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 4px 12px;
+}
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}
